@@ -1,0 +1,42 @@
+nstructions to Run the Scripts:
+On the Master Node:
+
+Save the master script as setup_master.sh.
+
+Make the script executable:
+
+
+$chmod +x setup_master.sh
+Run the script:
+
+bash
+$./setup_master.sh
+Copy the output join command; you'll use it on the worker nodes.
+
+On Each Worker Node:
+
+Save the worker script as setup_worker.sh.
+
+Replace <join-command> in the script with the actual join command from the master node.
+
+Make the script executable:
+
+bash
+$chmod +x setup_worker.sh
+Run the script:
+
+bash
+$./setup_worker.sh
+Verify the Cluster:
+
+On the master node, run:
+
+bash
+$kubectl get nodes
+Ensure all nodes (master and workers) are listed with a STATUS of Ready.
+
+Feel free to adapt these scripts to fit your specific setup or environment. If you need further assistance, let me know! 😊2
+
+1github.com
+2github.com
+3github.com
